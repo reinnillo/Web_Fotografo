@@ -1,0 +1,16 @@
+/* Estilos del footer */
+footer {
+
+    .container-section {
+        padding: 24px;
+        width: 100%;
+        height: auto;
+        background: var(--footer-background);
+        text-align: center;
+        color: var(--letterColorFooter);
+
+        p{
+            margin-bottom: 8px;
+        }
+    }
+}

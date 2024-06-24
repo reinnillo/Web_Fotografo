@@ -1,0 +1,139 @@
+/* Estilos de la sección "Contacto" */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+
+    .container-section {
+        width: 80%;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: var(--accent-primary);
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .contact-info {
+                text-align: left;
+                color: var(--accent-secondary);
+                max-width: 600px;
+                width: 100%;
+                margin: 0px auto;
+                padding: 24px;
+    
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 32px;
+                }
+                
+                p {
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+
+                .social-media-profile {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin-right: 8px;
+                            transform: scale(1);
+
+                            :hover {
+                                transform: scale(1.5) translateY(-8px);
+                            }
+
+                            img {
+                                width: 32px;
+                                cursor: pointer;
+                                transition: transform 0.5s ease;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-form {
+                max-width: 600px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 24px;
+    
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                    color: var(--accent-secondary);
+                }
+    
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    color: var(--accent-primary);
+                    border-radius: var(--border-radius);
+                    background-color: var(--accent-secondary);
+                    transition: box-shadow 0.4s ease;
+                }
+                textarea {
+                    height: 150px;
+                }
+    
+                button {
+                    background: var(--accent-secondary);
+                    color: var(--letterColor);
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: var(--border-radius);
+                    cursor: pointer;
+                    transition: box-shadow 0.4s ease;
+                    color: var(--accent-primary);
+                }
+            }
+        }
+
+    }
+}
+
+textarea:focus, input:focus {
+    color: var(--accent-primary);
+    box-shadow: 0 0 8px rgba(81, 203, 238, 1);
+}
+textarea:hover, input:hover, button:hover {
+    box-shadow: 0 0 8px rgba(81, 203, 238, 1);
+}
+
+@media (max-width: 760px) {
+    .contact-form {
+        max-width: 90%;
+        width: 100%;
+    }
+    .contact {
+        & .container-section {
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 100%;
+        width: 100%;
+    }
+}

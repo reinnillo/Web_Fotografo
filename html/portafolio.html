@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Laura Gutiérrez Fotografía</title>
+    <link rel="stylesheet" href="../css/portafolio.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../root.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <!--Nombre-->
+            <div class="logo-container">
+                <h1>Laura Gutiérrez</h1>
+            </div>
+
+            <!--Menu de navegacion-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./portafolio.html">Portafolio</a></li>
+                    <li><a href="./services.html">Servicios</a></li>
+                    <li><a href="./about.html">Sobre Mí</a></li>
+                    <li><a href="./form.html">Contacto</a></li>
+                </ul>
+                <a href="./form.html" class="cta-nav">Reservar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <div class="container-section">
+            <h1>Portafolio</h1>
+            <div class="portfolio-categories">
+                <button class="all">Todos</button>
+                <button class="wedding">Bodas</button>
+                <button class="boudoir">Boudoir</button>
+                <button class="pets">Mascotas</button>
+                <button class="pregnant">Prenatal</button>
+            </div>
+            <div class="portfolio-gallery">
+                
+                <div data-filter="wedding all" class="photo wedding"><img src="../assets/img/weddings-photos/modelo-3/wedding-7.jpg" alt="photo wedding"></div>
+                <div data-filter="wedding all" class="photo wedding"><img src="../assets/img/weddings-photos/modelo-3/wedding-3.jpg" alt="photo wedding"></div>
+                <div data-filter="wedding all" class="photo wedding"><img src="../assets/img/weddings-photos/modelo-3/wedding-2.jpg" alt="photo wedding"></div>
+                <div data-filter="wedding all" class="photo wedding"><img src="../assets/img/weddings-photos/modelo-3/wedding-1.jpg" alt="photo wedding"></div>
+                
+                <div data-filter="boudoir all" class="photo boudoir"><img src="../assets/img/boudoir-photos/modelo-1/boudoir-photo-1.jpg" alt="photo boudoir"></div>
+                <div data-filter="boudoir all" class="photo boudoir"><img src="../assets/img/boudoir-photos/modelo-1/boudoir-photo-2.jpg" alt="photo boudoir"></div>
+                <div data-filter="boudoir all" class="photo boudoir"><img src="../assets/img/boudoir-photos/modelo-1/boudoir-photo-3.jpg" alt="photo boudoir"></div>
+                <div data-filter="boudoir all" class="photo boudoir"><img src="../assets/img/boudoir-photos/modelo-1/boudoir-photo-4.jpg" alt="photo boudoir"></div>
+                
+                <div data-filter="pets all" class="photo pets"><img src="../assets/img/pets-photos/pexels-conejodepapel-14647515.jpg" alt="photo pets"></div>
+                <div data-filter="pets all" class="photo pets"><img src="../assets/img/pets-photos/pexels-conejodepapel-13632760.jpg" alt="photo pets"></div>
+                <div data-filter="pets all" class="photo pets"><img src="../assets/img/pets-photos/pexels-conejodepapel-14801704.jpg" alt="photo pets"></div>
+                <div data-filter="pets all" class="photo pets"><img src="../assets/img/pets-photos/pexels-conejodepapel-13237959.jpg" alt="photo pets"></div>
+                
+                <div data-filter="pregnant all" class="photo pregnant"><img src="../assets/img/pregnant-photos/modelo-2/pregnant-photo-1.jpg" alt="photo pregnant"></div>
+                <div data-filter="pregnant all" class="photo pregnant"><img src="../assets/img/pregnant-photos/modelo-2/pregnant-photo-2.jpg" alt="photo pregnant"></div>
+                <div data-filter="pregnant all" class="photo pregnant"><img src="../assets/img/pregnant-photos/modelo-2/pregnant-photo-3.jpg" alt="photo pregnant"></div>
+                <div data-filter="pregnant all" class="photo pregnant"><img src="../assets/img/pregnant-photos/modelo-2/pregnant-photo-4.jpg" alt="photo pregnant"></div>
+                <!-- Más imágenes aquí -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-section">
+            <p>&copy; 2024 Laura Gutiérrez Fotografía.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/filterPhoto.js"></script>
+</body>
+
+</html>

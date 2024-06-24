@@ -1,0 +1,56 @@
+/* Root */
+:root {
+    --backgoundColor: #333;
+    --letterColor: rgba(81, 203, 238, 1);
+    --letterColorFooter: #5d4343;
+    --accent-primary: #5fdff9;
+    --accent-secondary: rgb(20 40 61);
+    --footer-background: #15181b;
+}
+
+/* Estilos para reset */
+*, *::after, *::before, *:focus {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: inherit;
+    cursor: auto;
+    border: none;
+    outline: none;
+}
+
+/* Estilos globales */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container, nav {
+        flex-direction: column;
+    }
+    .photo-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .services-container {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+    
+}

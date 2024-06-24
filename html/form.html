@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Laura Gutiérrez Fotografía</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../root.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <!--Nombre-->
+            <div class="logo-container">
+                <h1>Laura Gutiérrez</h1>
+            </div>
+
+            <!--Menu de navegacion-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./portafolio.html">Portafolio</a></li>
+                    <li><a href="./services.html">Servicios</a></li>
+                    <li><a href="./about.html">Sobre Mí</a></li>
+                    <li><a href="./form.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container-section">
+            <h1>Contacto</h1>
+            <div class="content">
+
+                <div class="contact-info">
+                    <h2>Tienes un proyecto en mente, contactame</h2>
+                    <p><strong>Correo Electrónico:</strong> info@lauragutierrezfotografia.com</p>
+                    <p><strong>Teléfono:</strong> +1 (123) 456-7890</p>
+
+                    <div class="social-media-profile">
+                        <ul>
+                            <li><a href=""><img src="../assets/icons/bxl-instagram-alt.svg" alt="icon instagram"></a></li>
+                            <li><a href=""><img src="../assets/icons/bxl-whatsapp.svg" alt="icon whatsapp"></a></li>
+                            <li><a href=""><img src="../assets/icons/bxs-envelope.svg" alt="icon message"></a></li>
+                            <li><a href=""><img src="../assets/icons/bxl-linkedin-square.svg" alt="icon linkedin"></a></li>
+                            <li><a href=""><img src="" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!-- Dirección física (opcional) -->
+
+                </div>
+
+                <div class="contact-form">
+                    <form action="submit.js" method="post">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+    
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+    
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-section">
+            <p>&copy; 2024 Laura Gutiérrez Fotografía.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

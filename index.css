@@ -13,11 +13,11 @@ body {
 }
 
 .presentation {
-    background-image: url(../assets/img/background/presentation/presentation-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background 5s ease;
+    /*background-image: url(../assets/img/background/presentation/presentation-1.jpg);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*transition: background 5s ease;*/
     position: relative;
 
     & #img-portada {

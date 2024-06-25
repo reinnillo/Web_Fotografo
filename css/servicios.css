@@ -1,0 +1,139 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 70rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    color: var(--accent-primary);
+
+    .title {
+        margin-bottom: 2rem;
+        font-family: var(--title-gobal);
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 0.7fr;
+        gap: 2rem;
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accent-secondary);
+            box-shadow: var(--shadow);
+            padding: 1rem;
+
+            .box-img {
+                width: 60%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .service-details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    font-family: var(--title-gobal);
+                }
+
+                h2,
+                p {
+                    margin-bottom: 1rem;
+                    line-height: 1.3rem;
+                }
+
+            }
+
+            .price-pack {
+                li {
+                    margin-bottom: 1.5rem;
+                    margin: 1rem;
+                }
+
+                li #cta {
+                    background-color: var(--accent-primary);
+                    padding: .5rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    color: var(--accent-secondary);
+                }
+
+                li #cta:hover {
+                    color: #eee;
+                    box-shadow: var(--accent-secondary);
+                }
+            }
+        }
+
+        .present-ig {
+            background-color: var(--accent-secondary);
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    margin-bottom: 1rem;
+                }
+
+                li a svg {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    fill: var(--accent-primary);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    main {
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+        
+        .content {
+            grid-template-rows: repeat(4, 1fr) 0.2fr;
+            gap: 1rem;
+
+            .card {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                justify-items: center;
+                gap: 1rem;
+                padding: 1rem;
+                
+                .box-img {
+                    width: 100%;
+                }
+            
+                .price-pack li {
+                    margin-bottom: 1rem;
+                    margin: 0.5rem;
+                }
+            
+                .price-pack li #cta {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}

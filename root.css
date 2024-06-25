@@ -6,6 +6,8 @@
     --accent-primary: #5fdff9;
     --accent-secondary: rgb(20 40 61);
     --footer-background: #15181b;
+    --shadow: 0 0 8px rgba(81, 203, 238, 1);
+    --title-gobal: ;
 }
 
 /* Estilos para reset */

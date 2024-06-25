@@ -10,7 +10,7 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 2.5rem;
-            color: var(--accent-primary);
+            color: var(--accent-1);
         }
 
         .content {
@@ -22,7 +22,7 @@
 
             .contact-info {
                 text-align: left;
-                color: var(--accent-secondary);
+                color: var(--accent-2);
                 max-width: 37.5rem;
                 width: 100%;
                 margin: 0px auto;
@@ -75,7 +75,7 @@
                     display: block;
                     margin-bottom: .5rem;
                     font-weight: bold;
-                    color: var(--accent-secondary);
+                    color: var(--accent-2);
                 }
     
                 input[type="text"],
@@ -84,9 +84,9 @@
                     width: 100%;
                     padding: .5rem;
                     margin-bottom: 1rem;
-                    color: var(--accent-primary);
+                    color: var(--accent-1);
                     border-radius: var(--border-radius);
-                    background-color: var(--accent-secondary);
+                    background-color: var(--accent-2);
                     transition: box-shadow 0.4s ease;
                 }
                 textarea {
@@ -94,14 +94,14 @@
                 }
     
                 button {
-                    background: var(--accent-secondary);
+                    background: var(--accent-2);
                     color: var(--letterColor);
                     padding: .5rem 1rem;
                     border: none;
                     border-radius: var(--border-radius);
                     cursor: pointer;
                     transition: box-shadow 0.4s ease;
-                    color: var(--accent-primary);
+                    color: var(--accent-1);
                 }
             }
         }
@@ -110,7 +110,7 @@
 }
 
 textarea:focus, input:focus {
-    color: var(--accent-primary);
+    color: var(--accent-1);
     box-shadow: 0 0 8px rgba(81, 203, 238, 1);
 }
 textarea:hover, input:hover, button:hover {

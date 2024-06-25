@@ -12,8 +12,8 @@ header {
         margin-top: 2rem;
 
         h1 {
-            color: var(--accent-primary);
-            background-color: var(--accent-secondary);
+            color: var(--accent-1);
+            background-color: var(--accent-2);
             padding: .7rem;
             box-shadow: var(--shadow);
             font-family: var(--title-gobal);
@@ -35,7 +35,7 @@ header {
 
             li a {
                 margin-right: 1rem;
-                color: var(--accent-primary);
+                color: var(--accent-1);
                 cursor: pointer;
                 font-weight: bold;
             }
@@ -46,7 +46,7 @@ header {
         }
 
         .cta-nav {
-            background-color: var(--accent-primary);
+            background-color: var(--accent-1);
             padding: .5rem;
             font-weight: bold;
             cursor: pointer;

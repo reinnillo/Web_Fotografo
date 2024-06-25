@@ -60,10 +60,10 @@ header {
             h1 {
                 font-size: 2.5em;
                 font-weight: 700;
-                color: var(--accent-primary);
+                color: var(--accent-1);
                 box-shadow: 0 0 8px rgba(81, 203, 238, 1);
                 padding: 0 .5rem;
-                background-color: var(--accent-secondary);
+                background-color: var(--accent-2);
                 
                 a {
                     cursor: pointer;
@@ -98,18 +98,18 @@ header {
                     }
                 }
                 li:hover {
-                    background: var(--accent-secondary);
+                    background: var(--accent-2);
                     box-shadow: 0 0 8px rgba(81, 203, 238, 1);
                 }
                 li:hover a {
-                    color: var(--accent-primary);
+                    color: var(--accent-1);
                     cursor: pointer;
                 }
             }
 
             .cta-nav {
-                background: var(--accent-secondary);
-                color: var(--accent-primary);
+                background: var(--accent-2);
+                color: var(--accent-1);
                 padding: .5rem 2rem;
                 text-decoration: none;
                 transition: box-shadow 0.4s ease;
@@ -129,18 +129,18 @@ header {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        color: var(--accent-primary);
+        color: var(--accent-1);
         z-index: 5;
 
         p:nth-child(1) {
             font-size: 1rem;
             font-weight: 400;
-            background-color: var(--accent-secondary);
+            background-color: var(--accent-2);
         }
         p:nth-child(2) {
             font-size: 1rem;
             margin-top: .5rem;
-            background-color: var(--accent-secondary);
+            background-color: var(--accent-2);
         }
 
         div {
@@ -222,7 +222,7 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(20, 40, 61, 0.38);
-    color: var(--accent-primary);
+    color: var(--accent-1);
     font-weight: bold;
     font-size: 2rem;
     display: flex;
@@ -233,7 +233,7 @@ main {
 
     a {
         padding: 1rem;
-        background-color: var(--accent-secondary);
+        background-color: var(--accent-2);
         transition: box-shadow 0.4s ease;
     }
 
@@ -275,7 +275,7 @@ main {
 
         h2 {
             font-size: 2rem;
-            color: var(--accent-secondary);
+            color: var(--accent-2);
         }
     }
 
@@ -316,7 +316,7 @@ main {
                             height: 100%;
                             width: 100%;
                             padding: 1rem;
-                            background-color: var(--accent-secondary);
+                            background-color: var(--accent-2);
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
@@ -377,7 +377,7 @@ main {
                 width: 100%;
                 font-size: 1.5rem;
                 padding: 1rem;
-                color: var(--accent-primary);
+                color: var(--accent-1);
                 background: rgba(20, 40, 61, 0.5);
                 opacity: 0;
                 transition: opacity 0.5s;

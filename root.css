@@ -2,11 +2,12 @@
 :root {
     --backgoundColor: #333;
     --letterColor: rgba(81, 203, 238, 1);
-    --letterColorFooter: #5d4343;
-    --accent-primary: #5fdff9;
-    --accent-secondary: rgb(20 40 61);
-    --footer-background: #15181b;
+    --accent-1: #5fdff9;
+    --accent-2: rgb(20 40 61);
+    --accent-3: rgb(170 188 207);
     --shadow: 0 0 8px rgba(81, 203, 238, 1);
+    --footer-background: #15181b;
+    --letterColorFooter: #5d4343;
     --font-family: "Montserrat Alternates", sans-serif;
 }
 

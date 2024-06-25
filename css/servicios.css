@@ -7,7 +7,7 @@ main {
     max-width: 70rem;
     margin: auto;
     margin-bottom: 5rem;
-    color: var(--accent-primary);
+    color: var(--accent-1);
 
     .title {
         margin-bottom: 2.5rem;
@@ -25,7 +25,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
             align-items: center;
             justify-content: center;
-            background-color: var(--accent-secondary);
+            background-color: var(--accent-2);
             box-shadow: var(--shadow);
             padding: 1rem;
 
@@ -63,22 +63,21 @@ main {
                 }
 
                 li #cta {
-                    background-color: var(--accent-primary);
                     padding: .5rem;
                     font-weight: bold;
                     cursor: pointer;
-                    color: var(--accent-secondary);
+                    color: var(--accent-3);
                 }
 
                 li #cta:hover {
                     color: #eee;
-                    box-shadow: var(--accent-secondary);
+                    text-shadow: var(--shadow);
                 }
             }
         }
 
         .present-ig {
-            background-color: var(--accent-secondary);
+            background-color: var(--accent-2);
             box-shadow: var(--shadow);
             display: flex;
             justify-content: center;
@@ -97,7 +96,7 @@ main {
                 li a svg {
                     width: 2.5rem;
                     height: 2.5rem;
-                    fill: var(--accent-primary);
+                    fill: var(--accent-1);
                 }
             }
         }

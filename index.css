@@ -9,7 +9,7 @@ body {
         'footer footer'
     ;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto 50px;
+    grid-template-rows: auto auto auto 3rem;
 }
 
 .presentation {
@@ -47,7 +47,7 @@ header {
         justify-content: space-between;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
+        padding:  .5rem 1rem;
         z-index: 5;
 
         .logo-container {
@@ -59,11 +59,10 @@ header {
 
             h1 {
                 font-size: 2.5em;
-                font-family: fantasy;
-                font-weight: lighter;
+                font-weight: 700;
                 color: var(--accent-primary);
                 box-shadow: 0 0 8px rgba(81, 203, 238, 1);
-                padding: 0 8px;
+                padding: 0 .5rem;
                 background-color: var(--accent-secondary);
                 
                 a {
@@ -74,19 +73,19 @@ header {
 
         nav {
             height: 100%;
-            margin: 20px;
+            margin: .5rem;
             display: flex;
-            gap: 10px;
+            gap: .5rem;
             justify-content: space-between;
             align-items: center;
 
             ul {
                 display: flex;
-                margin: 8px 0;
+                margin: .5rem 0;
 
                 li {
                     display: inline;
-                    padding: 8px 4px;
+                    padding: .5rem;
                     background: none;
                     transition: background 0.6s ease;
 
@@ -111,7 +110,7 @@ header {
             .cta-nav {
                 background: var(--accent-secondary);
                 color: var(--accent-primary);
-                padding: 10px 20px;
+                padding: .5rem 2rem;
                 text-decoration: none;
                 transition: box-shadow 0.4s ease;
             }
@@ -124,8 +123,8 @@ header {
 
     /* Contenido de la portada */
     .content-portada {
-        width: 455px;
-        padding: 10px;
+        width: 28.5rem;
+        padding: .5rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -134,21 +133,21 @@ header {
         z-index: 5;
 
         p:nth-child(1) {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 1rem;
+            font-weight: 400;
             background-color: var(--accent-secondary);
         }
         p:nth-child(2) {
-            font-size: 16px;
-            margin-top: 10px;
+            font-size: 1rem;
+            margin-top: .5rem;
             background-color: var(--accent-secondary);
         }
 
         div {
-            margin-top: 20px;
+            margin-top: 1rem;
 
             a img {
-                width: 40px;
+                width: 2.5rem;
                 animation: bounce 2s infinite;
             }
         }
@@ -186,7 +185,7 @@ main {
 }
 
 .container-section-photo {
-    margin: 20px auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,9 +196,9 @@ main {
 .photo-content {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 2rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 100dvh;
 }
 
@@ -225,7 +224,7 @@ main {
     background: rgba(20, 40, 61, 0.38);
     color: var(--accent-primary);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +232,7 @@ main {
     transition: opacity 0.5s ease;
 
     a {
-        padding: 16px;
+        padding: 1rem;
         background-color: var(--accent-secondary);
         transition: box-shadow 0.4s ease;
     }
@@ -261,21 +260,21 @@ main {
     grid-area: services;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
 
     .services-tittle {
-        height: 100px;
+        height: 6rem;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
 
         h2 {
-            font-size: 32px;
+            font-size: 2rem;
             color: var(--accent-secondary);
         }
     }
@@ -316,7 +315,7 @@ main {
                         h3 {
                             height: 100%;
                             width: 100%;
-                            padding: 16px;
+                            padding: 1rem;
                             background-color: var(--accent-secondary);
                             display: flex;
                             align-items: center;
@@ -376,8 +375,8 @@ main {
                 position: absolute;
                 height: 100%;
                 width: 100%;
-                font-size: 24px;
-                padding: 16px;
+                font-size: 1.5rem;
+                padding: 1rem;
                 color: var(--accent-primary);
                 background: rgba(20, 40, 61, 0.5);
                 opacity: 0;

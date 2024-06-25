@@ -10,7 +10,7 @@ main {
     color: var(--accent-primary);
 
     .title {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         font-family: var(--title-gobal);
     }
 

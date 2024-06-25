@@ -2,7 +2,7 @@
 footer {
 
     .container-section {
-        padding: 24px;
+        padding: 1.5rem;
         width: 100%;
         height: auto;
         background: var(--footer-background);
@@ -10,7 +10,7 @@ footer {
         color: var(--letterColorFooter);
 
         p{
-            margin-bottom: 8px;
+            margin-bottom: .5rem;
         }
     }
 }

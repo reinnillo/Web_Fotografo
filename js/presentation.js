@@ -19,11 +19,11 @@ const imgList = [
 ];
 
 // Funcion para animar la imagen de portada del home
-function animatePortada(element, interval) {
+function animatePortada(array, element, interval) {
     let i = 0;
     setInterval(() => {
-        element.src = `${imgList[i]}`;
-        i = (i + 1) % imgList.length;
+        element.src = `${array[i]}`;
+        i = (i + 1) % array.length;
     }, interval);
 }
 
@@ -38,24 +38,28 @@ function autoSize(element) {
 
 window.onload = function () {
     autoSize(presentation);
+    // mobile
     if (window.innerWidth <= 768) {
         imgPortada.src = imgForMobile[0];
-        animatePortada(imgForMobile, 15000);
+        animatePortada(imgForMobile, imgPortada, 15000);
         
     } else {
+        // desktop
         imgPortada.src = imgList[0];
-        animatePortada(imgPortada, 15000);
+        animatePortada(imgList, imgPortada, 15000);
     }
 }
 window.onresize = function () {
     autoSize(presentation);
+    // mobile
     if (window.innerWidth <= 768) {
-       imgPortada.src = imgForMobile[0];
-       animatePortada(imgForMobile, 15000);
-       
+        imgPortada.src = imgForMobile[0];
+        animatePortada(imgForMobile, imgPortada, 15000);
+        
     } else {
+        // desktop
         imgPortada.src = imgList[0];
-        animatePortada(imgPortada, 15000);
+        animatePortada(imgList, imgPortada, 15000);
     }
 }
 

@@ -1,7 +1,8 @@
 /* Estilos de la sección de portafolio */
 .portfolio {
-    padding: 3rem 0;
+    padding: 3rem;
     text-align: center;
+    margin: 7rem auto;
 
     .container-section {
         width: 80%;
@@ -53,6 +54,7 @@
                     display: block;
                     opacity: 0.3;
                     transform: scale(0.9);
+                    border-radius: var(--border-radius);
                     transition: all .5s linear;
                 }
                 .view-img {

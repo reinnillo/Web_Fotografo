@@ -6,23 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Laura Gutiérrez Fotografía</title>
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./root.css">
 </head>
 
 <body>
-
-    <header class="presentation">
-        <img id="img-portada" src="./assets/img/background/presentation/presentation-6.jpg" alt="">
-        <div class="header-container">
+    <div class="home">
+        <div class="mobile-menu">
+            <ul class="first-ul">
+                <li>
+                    <div class="logo">
+                        <h1><a href="./about.html">Laura Gutiérrez</a></h1>
+                        <div id="btn-close-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4 6h2v12H4zm10.293-.707L7.586 12l6.707 6.707 1.414-1.414L11.414 13H20v-2h-8.586l4.293-4.293z">
+                                </path>
+                            </svg></div>
+                    </div>
+                </li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./html/portafolio.html">Portafolio</a></li>
+                <li><a href="./html/services.html">Servicios</a></li>
+                <li><a href="./html/about.html">Sobre mí</a></li>
+                <li><a href="./html/form.html">Contacto</a></li>
+            </ul>
+            <ul class="last-ul">
+                <li><a href=""><img src="../assets/icons/bxl-instagram-alt.svg" alt="icon instagram"></a></li>
+                <li><a href=""><img src="../assets/icons/bxl-whatsapp.svg" alt="icon whatsapp"></a></li>
+                <li><a href=""><img src="../assets/icons/bxs-envelope.svg" alt="icon message"></a></li>
+                <li><a href=""><img src="../assets/icons/bxl-linkedin-square.svg" alt="icon linkedin"></a></li>
+            </ul>
+        </div>
+    
+        <div class="header-mobile">
+            <div class="logo-header-mobile">
+                <h1><a href="./about.html">Laura Gutiérrez</a></h1>
+            </div>
+            <div id="btn-open-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="#aaa">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+                </svg></div>
+        </div>
+    
+        <div class="presentation">
+            <img id="img-portada" src="" alt="" loading="lazy">
+        </div>
+        <header>
             <!--Nombre-->
             <div class="logo-container">
                 <h1><a href="./html/about.html">Laura Gutiérrez</a></h1>
+                <p class="line-down"></p>
             </div>
-
+    
             <!--Menu de navegacion-->
             <nav>
                 <ul>
@@ -34,15 +74,19 @@
                 </ul>
                 <a href="./html/form.html" class="cta-nav">Reservar Sesión</a>
             </nav>
-        </div>
-
+        </header>
+    
         <!--Frase de la portada-->
         <div class="content-portada">
             <p>"Pasión y Creatividad en Cada Toma"</p>
             <p>Descubre Mi Estilo</p>
-            <div><a href="#photo-style"><img src="./assets/icons/mouse.svg" alt=""></a></div>
+            <div><a href="#photo-style"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M13 2v8h6V8c0-3.309-2.691-6-6-6zM5 16c0 3.309 2.691 6 6 6h2c3.309 0 6-2.691 6-6v-4H5v4zm0-8v2h6V2C7.691 2 5 4.691 5 8z">
+                        </path>
+                    </svg></a></div>
         </div>
-    </header>
+    </div>
 
     <main>
         <!-- Seccion de fotos de boda y boudoir -->
@@ -50,14 +94,16 @@
             <div class="photo-content">
 
                 <div class="section-boda box-img-section">
-                    <img src="./assets/img/weddings-photos/modelo-3/wedding-3.jpg" title="weddings" alt="weddings photos">
+                    <img src="./assets/img/weddings-photos/modelo-3/wedding-3.jpg" title="weddings"
+                        alt="weddings photos">
                     <div class="overlay">
                         <a href="./html/portafolio.html?filter=wedding">Ver fotos de Bodas</a>
                     </div>
                 </div>
 
                 <div class="section-boudoir box-img-section">
-                    <img src="./assets/img/boudoir-photos/background-boudoir/sentada-sombra.jpg" title="boudoir" alt="boudoir photos">
+                    <img src="./assets/img/boudoir-photos/background-boudoir/sentada-sombra.jpg" title="boudoir"
+                        alt="boudoir photos">
                     <div class="overlay">
                         <a href="./html/portafolio.html?filter=boudoir">Ver fotos Boudoir</a>
                     </div>
@@ -77,7 +123,8 @@
                 </div>
 
                 <div class="section-pregnant box-img-section">
-                    <img src="./assets/img/pregnant-photos/background-pregnant/pregnant-semiDes-bn.jpg" title="pregnant" alt="pregnant photos">
+                    <img src="./assets/img/pregnant-photos/background-pregnant/pregnant-semiDes-bn.jpg" title="pregnant"
+                        alt="pregnant photos">
                     <div class="overlay">
                         <a href="./html/portafolio.html?filter=pregnant">Ver fotos Prenatales</a>
                     </div>
@@ -88,7 +135,7 @@
     </main>
 
     <!-- Seccion de servicios -->
-     <section class="services-section">
+    <section class="services-section">
         <div class="services-tittle">
             <h2>Nuestro Catálogo de Servicios</h2>
         </div>
@@ -98,21 +145,29 @@
             <div class="services-content">
                 <div class="services-items">
                     <div class="item-h3">
-                        <a href="./html/services.html"><h3>Fotografía de Bodas</h3></a>
+                        <a href="./html/services.html">
+                            <h3>Fotografía de Bodas</h3>
+                        </a>
                     </div>
                     <div class="item-h3">
-                        <a href="./html/services.html"><h3>Fotografía Boudoir</h3></a>
+                        <a href="./html/services.html">
+                            <h3>Fotografía Boudoir</h3>
+                        </a>
                     </div>
                     <div class="item-h3">
-                        <a href="./html/services.html"><h3>Fotografía de Mascotas</h3></a>
+                        <a href="./html/services.html">
+                            <h3>Fotografía de Mascotas</h3>
+                        </a>
                     </div>
                     <div class="item-h3">
-                        <a href="./html/services.html"><h3>Fotografía de Embarazo</h3></a>
+                        <a href="./html/services.html">
+                            <h3>Fotografía de Embarazo</h3>
+                        </a>
                     </div>
                 </div>
             </div>
 
-    
+
             <div class="services-photo">
                 <div class="services-box-img">
 
@@ -120,26 +175,33 @@
                         <img src="./assets/img/weddings-photos/modelo-3/wedding-1.jpg" alt="services photos weddings">
                     </div>
                     <div class="img-boudoir-box img-box">
-                        <img src="./assets/img/boudoir-photos/background-boudoir/atada-bn.jpg" alt="services photos boudoir">
+                        <img src="./assets/img/boudoir-photos/background-boudoir/atada-bn.jpg"
+                            alt="services photos boudoir">
                     </div>
                     <div class="img-pets-box img-box">
-                        <img src="./assets/img/pets-photos/pexels-conejodepapel-14647515.jpg" alt="services photos pets">
+                        <img src="./assets/img/pets-photos/pexels-conejodepapel-14647515.jpg"
+                            alt="services photos pets">
                     </div>
                     <div class="img-pregnant-box img-box">
-                        <img src="./assets/img/pregnant-photos/modelo-2/pregnant-photo-1.jpg" alt="services photos pregnant">
+                        <img src="./assets/img/pregnant-photos/modelo-2/pregnant-photo-1.jpg"
+                            alt="services photos pregnant">
                     </div>
 
                 </div>
                 <div class="services-text">
-                    <p class="item-p">Cada sonrisa, cada mirada, capturada para recordar el inicio de su viaje juntos.</p>
-                    <p class="item-p">Elegancia y sensualidad, empoderamiento y autoexpresión. Capturando tu esencia en su forma más pura.</p>
-                    <p class="item-p">Porque ellos también son parte de la familia, les damos un lugar protagonistas en nuestras fotos.</p>
-                    <p class="item-p">Un recuerdo precioso de cuando dos corazones latían juntos, uno dentro de otro.</p>
+                    <p class="item-p">Cada sonrisa, cada mirada, capturada para recordar el inicio de su viaje juntos.
+                    </p>
+                    <p class="item-p">Elegancia y sensualidad, empoderamiento y autoexpresión. Capturando tu esencia en
+                        su forma más pura.</p>
+                    <p class="item-p">Porque ellos también son parte de la familia, les damos un lugar protagonistas en
+                        nuestras fotos.</p>
+                    <p class="item-p">Un recuerdo precioso de cuando dos corazones latían juntos, uno dentro de otro.
+                    </p>
                 </div>
             </div>
         </div>
 
-     </section>
+    </section>
 
     <footer>
         <div class="container-section">
@@ -150,6 +212,7 @@
 
     <script type="module" src="./js/presentation.js"></script>
     <script type="module" src="./js/services.js"></script>
+    <script type="module" src="./js/menu-mobile.js"></script>
 </body>
 
 </html>

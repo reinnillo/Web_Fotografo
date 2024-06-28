@@ -5,8 +5,7 @@ main {
     align-items: center;
     justify-content: center;
     max-width: 70rem;
-    margin: auto;
-    margin-bottom: 5rem;
+    margin: 7rem auto;
     color: var(--accent-1);
 
     .title {
@@ -28,6 +27,7 @@ main {
             background-color: var(--accent-2);
             box-shadow: var(--shadow);
             padding: 1rem;
+            border-radius: var(--border-radius);
 
             .box-img {
                 width: 60%;
@@ -35,6 +35,7 @@ main {
                 img {
                     width: 100%;
                     object-fit: cover;
+                    border-radius: var(--border-radius);
                 }
             }
 
@@ -83,6 +84,7 @@ main {
             justify-content: center;
             align-items: center;
             padding: 2rem;
+            border-radius: var(--border-radius);
 
             ul {
                 display: flex;

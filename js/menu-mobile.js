@@ -1,6 +1,7 @@
 const btn_MenuMobileClose = document.querySelector('#btn-close-mobile-menu');
 const btn_MenuMobileOpen = document.querySelector('#btn-open-mobile-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
+const headerMobile = document.querySelector('.header-mobile');
 
 const closeMenu = () => {
     mobileMenu.classList.remove('toggle');
@@ -8,16 +9,16 @@ const closeMenu = () => {
 const openMenu = () => {
     mobileMenu.classList.add('toggle');
 }
-const dissipate = (opacityValue, timeOut) => {
+const dissipate = (element, opacityValue, timeOut) => {
     setTimeout(() => {
-        btn_MenuMobileOpen.style.opacity = opacityValue;
+        element.style.opacity = opacityValue;
     }, timeOut);
 }
 btn_MenuMobileClose.addEventListener('click', () => {
     closeMenu();
-    dissipate(1, 500);
+    dissipate(headerMobile, 1, 200);
 });
 btn_MenuMobileOpen.addEventListener('click', () => {
     openMenu();
-    dissipate(0, 500);
+    dissipate(headerMobile, 0, 200);
 });

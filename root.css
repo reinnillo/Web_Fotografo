@@ -1,6 +1,6 @@
 /* Root */
 :root {
-    --backgoundColor: #333;
+    /* --background-color: #333; */
     --background-color: #0e0e0e;
     --background-header: rgba(14, 14, 14, .8);
     --letterColor: rgba(81, 203, 238, 1);

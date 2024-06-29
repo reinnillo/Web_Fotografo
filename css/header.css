@@ -39,9 +39,10 @@ header {
 
         ul {
             display: flex;
+            gap: 1rem;
+            margin-right: 1rem;
 
             li a {
-                margin-right: 1rem;
                 color: var(--accent-1);
                 cursor: pointer;
                 font-weight: bold;

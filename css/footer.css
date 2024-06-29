@@ -7,7 +7,7 @@ footer {
         height: auto;
         background: var(--footer-background);
         text-align: center;
-        color: var(--letterColorFooter);
+        color: var(--accent-3);
 
         p{
             margin-bottom: .5rem;

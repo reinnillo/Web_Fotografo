@@ -99,7 +99,7 @@ header {
     grid-template-rows: 1fr 1fr;
     height: 100dvh;
     width: 80%;
-    padding: 1rem .5rem 0 0.8rem;
+    padding: 1rem 3rem 0 0.8rem;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
     transform: translateX(-110%);
     transition: all 0.3s ease;
@@ -108,8 +108,12 @@ header {
     left: 0;
     background-color: var(--background-header);
     z-index: 1000;
+    box-shadow: var(--shadow);
 
     & .first-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         border-bottom: 1px solid var(--accent-1);
 
         li {
@@ -137,7 +141,7 @@ header {
         justify-content: space-around;
 
         li {
-            margin-top: 1rem;
+            margin-top: 3rem;
 
             a {
                 img {

@@ -25,9 +25,11 @@ function autoSize(element) {
 
 window.onload = function () {
     autoSize(presentation);
+    if(imgPortada.src) imgPortada.src = '';
     window.innerWidth <= 768 ? imgPortada.src = background.mobile[0]: imgPortada.src = background.desktop[0];
 }
 window.onresize = function () {
     autoSize(presentation);
+    if(imgPortada.src) imgPortada.src = '';
     window.innerWidth <= 768 ? imgPortada.src = background.mobile[2]: imgPortada.src = background.desktop[1];
 }

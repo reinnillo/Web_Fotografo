@@ -1,4 +1,3 @@
-// Obtener las variables.
 const presentation = document.querySelector('.presentation');
 const imgPortada = document.querySelector('#img-portada');
 
@@ -13,9 +12,8 @@ const background = {
         '../assets/img/bg-desktop/bg-pc-2.jpg',
         '../assets/img/bg-desktop/bg-pc-3.jpg',
     ],
-}
+};
 
-// Funcion para ajustar el tamano del elemento home igual al del dispositivo.
 function autoSize(element) {
     let height = document.documentElement.clientHeight / 16;
     let width = document.documentElement.clientWidth / 16;
@@ -23,13 +21,25 @@ function autoSize(element) {
     element.style.height = height + 'rem';
 }
 
-window.onload = function () {
-    autoSize(presentation);
-    if(imgPortada.src) imgPortada.src = '';
-    window.innerWidth <= 768 ? imgPortada.src = background.mobile[0]: imgPortada.src = background.desktop[0];
+function cargarImagen(src) {
+    const img = new Image();
+    img.onload = function() {
+        imgPortada.src = src;
+    };
+    img.onerror = function() {
+        console.error('Error al cargar la imagen:', src);
+    };
+    img.src = src;
 }
-window.onresize = function () {
+
+window.addEventListener('DOMContentLoaded', () => {
     autoSize(presentation);
-    if(imgPortada.src) imgPortada.src = '';
-    window.innerWidth <= 768 ? imgPortada.src = background.mobile[2]: imgPortada.src = background.desktop[1];
-}
+    const src = window.innerWidth <= 768 ? background.mobile[0] : background.desktop[0];
+    cargarImagen(src);
+});
+
+window.addEventListener('resize', () => {
+    autoSize(presentation);
+    const src = window.innerWidth <= 768 ? background.mobile[2] : background.desktop[1];
+    cargarImagen(src);
+});

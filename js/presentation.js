@@ -3,14 +3,14 @@ const imgPortada = document.querySelector('#img-portada');
 
 const background = {
     mobile: [
-        '../assets/img/bg-mobile/bg-mo-1.jpg',
-        '../assets/img/bg-mobile/bg-mo-2.jpg',
-        '../assets/img/bg-mobile/bg-mo-3.jpg',
+        './assets/img/bg-mobile/bg-mo-1.jpg',
+        './assets/img/bg-mobile/bg-mo-2.jpg',
+        './assets/img/bg-mobile/bg-mo-3.jpg',
     ],
     desktop: [
-        '../assets/img/bg-desktop/bg-pc-1.jpg',
-        '../assets/img/bg-desktop/bg-pc-2.jpg',
-        '../assets/img/bg-desktop/bg-pc-3.jpg',
+        './assets/img/bg-desktop/bg-pc-1.jpg',
+        './assets/img/bg-desktop/bg-pc-2.jpg',
+        './assets/img/bg-desktop/bg-pc-3.jpg',
     ],
 };
 

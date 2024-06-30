@@ -213,7 +213,7 @@ main {
                     line-height: 1.4rem;
                     margin-bottom: 1rem;
                 }
-                button {
+                #cta-2 {
                     padding: 1rem;
                     border-radius: var(--border-radius);
                     box-shadow: var(--shadow);
@@ -225,7 +225,7 @@ main {
                     transition: all .5s;
                     cursor: pointer;
                 }
-                button:hover {
+                #cta-2:hover {
                     background-color: var(--accent-1);
                     color: var(--accent-2);
                 }

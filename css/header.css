@@ -54,15 +54,18 @@ header {
         }
 
         .cta-nav {
-            background-color: var(--accent-1);
-            padding: .5rem;
+            background-color: transparent;
+            box-shadow: var(--shadow);
+            color: var(--accent-3);
+            padding: 1rem;
             font-weight: bold;
             border-radius: var(--border-radius);
             cursor: pointer;
         }
 
         .cta-nav:hover {
-            box-shadow: var(--shadow);
+            background-color: var(--accent-1);
+            color: var(--accent-2);
         }
     }
 }
